@@ -10,7 +10,7 @@
 ````
 apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
 ````
-<img src='./res/image_1.png' /img>
+<img src='./res/image_1.png' />
 
 #### 2.添加配置信息
 接下来，我们需要添加一部分配置文件到同一个gradle.build，下图中的第一行表示它为一个Android Library。
@@ -27,7 +27,7 @@ ext {
 }
 ````
 
-<img src='./res/image_2.png' /img>
+<img src='./res/image_2.png' />
 
 #### 3.生成文件
 
@@ -38,7 +38,7 @@ ext {
 ````
 在耐心的等待命令执行完毕后，你应该会看到 `BUILD SUCCESSFUL`这句话，同时它也会提示你release zip文件的路径。
 
-<img src='./res/image_3.png' /img>
+<img src='./res/image_3.png' />
 
 这时候如果你打开对应的路径，应该能看到一个release-x.x.zip的压缩文件。
 
@@ -62,13 +62,13 @@ ext {
 
 经过上一步呢，我们现在就已经与一个版本了，`Upload Files`我花了好久才找到，注意一定是在Version对应的页面才有这个按钮
 
-<img src='./res/image_4.png' /img>
+<img src='./res/image_4.png' />
 
 ###### 4.5 一个小小的CheckBox
 
 接下来你应该就可以上传zip文件并上传了，但是在上传之前，一定要记得勾选`exploding the archive` CheckBox，否则的话你的项目就会不起作用！！！
 
-<img src='./res/image_5.png' /img>
+<img src='./res/image_5.png' />
 
 ###### 4.6 JCenter request
 
@@ -76,7 +76,7 @@ ext {
 
 如果你进到`project`页，那么在右下角会有一个`add to jcenter`的小安妮，点击后填写简单的信息，等待通过后（一般几个小时吧），你的Library就和JCenter关联起来了。
 
-<img src='./res/image_6.png' /img>
+<img src='./res/image_6.png' />
 
 ###### 4.7 最后
 
